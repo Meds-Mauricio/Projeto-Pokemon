@@ -1,11 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Input from '../src/components/Input'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      teste do pokemon com Mauricio de Souza Ramos 
-    </div>
-  )
+    const click = () => {
+        window.location.href = "/#"
+    }
+    return (
+        <div className={styles.container}>
+            <Input/>
+        </div>
+    )
 }
