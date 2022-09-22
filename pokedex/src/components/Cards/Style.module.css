@@ -1,0 +1,10 @@
+.card {
+width: 4rem;
+height: 6rem;
+background-color: brown;
+/* z-index: 100; */
+margin-top: -50px;
+position: absolute;
+
+
+}

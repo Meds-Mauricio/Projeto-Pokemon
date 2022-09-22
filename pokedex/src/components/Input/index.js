@@ -1,16 +1,19 @@
-// import styles from styles/Home.module.css'
+import Style from "./Style.module.css"
 
 export default function Input() {
     const click = () => {
-        window.location.href = "/#"
+        window.location.href = "/pagesPokemon"
     }
     return (
-        <div className='container'>
-            <div className='pokeseach'>
+    <>
+        <section className={Style.container}>
+            <div className={Style.pokeSearch}>
                 <input playceholder='Nome do Pokemon' onChange={(e) => (e.target.value)} />
-                {/* <button onClick={() => Click()}>Seach</button> */}
-                <button className="submit" href="#" onClick={click}>Search</button>
+                <button className={Style.open} onClick={() => Click()}>Search</button>
+                <button class={Style.search} href="/pagesPokemon" onClick={click}>Open</button>
             </div>
-        </div>
+        </section>
+    </>
+
     )
 }
