@@ -5,8 +5,6 @@
     width: 350px;
 }
 
-
-
 .container input {
     border-radius: 6px;
     width: 250px;
@@ -20,6 +18,7 @@
     height: 50px;
     font-weight: bold;
 }
+
 .container .search{
     border-radius: 6px;
     background-color: rgb(219, 45, 18);

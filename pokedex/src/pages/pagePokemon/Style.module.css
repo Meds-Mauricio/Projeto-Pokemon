@@ -1,0 +1,46 @@
+.pokeLista {
+    margin: 0 10px 0 10px;
+    width: 25%;
+    /* background-color:#70D3FF; */
+}
+
+.pokeLista img {
+    z-index: 100;
+    width: 10%;
+    height: 20%;
+    
+}
+
+.PokeCards {
+    position: absolute;
+}
+
+
+
+
+
+/* .cardsMasculina {
+    max-width: 1440px;
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    padding: 0.1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cardsMasculina img{
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+} */
+
+/* .card {
+    width: 30%;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 2px;
+    border-radius: 0.9rem;
+    margin-top: 30px;
+} */
