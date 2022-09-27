@@ -1,0 +1,10 @@
+.modal {
+    display: flex;
+    width: 50%;
+    position: absolute;
+    background-color: #d8df31;
+    opacity: 0.9;
+    border: solid #000;
+    border-radius: 15px;
+
+}

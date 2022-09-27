@@ -7,6 +7,7 @@ export default function Home() {
     const click = () => {
         window.location.href = "/#"
     }
+    
     return (
         <section className='home'>
             <div className='pokeHome'>
