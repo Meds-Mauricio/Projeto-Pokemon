@@ -3,7 +3,7 @@ import { resolveHref } from "next/dist/shared/lib/router/router";
 import Style from "./Style.module.css"
 
 export default function Input() {
-    const [data, setData] = useState();
+    const [data, setData] = useState(any);
     const [detalhes, setDetalhes] = useState(false);
     const [valores, setValores] = useState();
 
