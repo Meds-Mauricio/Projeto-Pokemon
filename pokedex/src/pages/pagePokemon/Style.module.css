@@ -1,7 +1,4 @@
 .pokeLista {
-    /* display: flex;
-    margin: 0 10px 0 10px;
-    width: 100%; */
     display: flex;
     width: 100%;
     justify-content: center;
@@ -19,7 +16,23 @@
     width: 1920px;
     padding: 20px;
     border-radius: 2px solid black;
-    
+}
+
+.pokeModal {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.pokeHabilidades {
+    border: solid #000;
+    width: 100%;
+    text-transform: capitalize;
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin: 23px 9px;
+    font-weight: bolder;
+    font-size: 25px;
+    border-radius: 15px;
 }
 
 .listPokemons {
@@ -33,7 +46,13 @@
     border: solid #000;
     border-radius: 15px;
     text-transform: capitalize;
+}
 
+.pokeHab
+
+.pokeInfo1 {
+    display: flex;
+    width: 50px;
 }
 
 .pokeNome {
@@ -42,7 +61,6 @@
     font-size: 25px;
     width: 150px;
     height: 29px;
-    
 }
 
 .listPokemons img {

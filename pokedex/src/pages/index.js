@@ -5,7 +5,7 @@ import Input from '../components/Input'
 
 export default function Home() {
     const click = () => {
-        window.location.href = "/#"
+        window.location.href = "/home"
     }
     
     return (
