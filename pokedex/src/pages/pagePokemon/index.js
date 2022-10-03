@@ -4,9 +4,8 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Modal from "../../components/Modal";
 
+
 export default function pagePokemon() {
-
-
     const [data, setData] = useState();
     const [detalhes, setDetalhes] = useState(false);
     const [valores, setValores] = useState();
@@ -34,6 +33,7 @@ export default function pagePokemon() {
 
                 <div className={Style.voltarHome}>
                     <a className={Style.linkVoltar} href="/">Voltar</a>
+                    
                 </div>
 
                 <section className={Style.pokeLista}>

@@ -1,9 +1,10 @@
-import { resolveHref } from "next/dist/shared/lib/router/router";
+import React, { useState, useEffect } from 'react'
+
 // import Modal from "../Modal";
 import Style from "./Style.module.css"
 
 export default function Input() {
-    const [data, setData] = useState(any);
+    const [data, setData] = useState();
     const [detalhes, setDetalhes] = useState(false);
     const [valores, setValores] = useState();
 
@@ -14,7 +15,7 @@ export default function Input() {
         href = "/modal"
         const Modal = (name) => {
             setDetalhes(true);
-useEfect(() => {
+useEffect(() => {
             axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`, {}
             )
                 .then((preview) => {

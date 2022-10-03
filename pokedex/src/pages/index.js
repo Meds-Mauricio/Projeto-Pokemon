@@ -1,7 +1,7 @@
 import Head from 'next/head'
 // import Image from 'next/image'
 import Input from '../components/Input'
-
+import React, { useState } from 'react'
 // export default function Home() {
 // const click = () => {
 //     window.location.href = "/home"
@@ -18,7 +18,6 @@ import Input from '../components/Input'
 // }
 
 
-import React, { useState } from 'react'
 // import Head from 'next/head'
 // import Style from './Style.module.css';
 import axios from 'axios';
