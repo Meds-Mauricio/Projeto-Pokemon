@@ -1,10 +1,7 @@
-/* .modal {
+ .modal {
     display: flex;
-    width: 50%;
-    position: absolute;
-    background-color: #d8df31;
-    opacity: 0.9;
-    border: solid #000;
-    border-radius: 15px;
-
-} */
+    flex-direction: column;
+    width: 25%;
+    height: 70vh;
+    background: #626262;
+}

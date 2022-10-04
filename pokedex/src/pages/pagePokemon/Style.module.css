@@ -19,7 +19,7 @@
 }
 
 .pokeModal {
-    width: 500px;
+    width: 585px;
     margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@
     font-weight: bolder;
     font-size: 25px;
     border-radius: 15px;
+    text-shadow: 5px 6px 2px #ccc;
 }
 
 .listPokemons {
