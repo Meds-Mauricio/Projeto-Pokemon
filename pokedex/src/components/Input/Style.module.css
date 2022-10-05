@@ -5,26 +5,40 @@
     width: 350px;
 }
 
-.container input {
+.pokeSearch input {
     border-radius: 6px;
-    width: 250px;
+    width: 350px;
     height: 50px;
     padding: 10px;
+    text-align: center;
 }
 
-.container button {
+.open {
     border-radius: 6px;
-    width: 100px;
+    width: 350px;
     height: 50px;
     font-weight: bold;
 }
 
-.container .search{
+.pokeSearch {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+ }
+
+.pokeSearch a{
     border-radius: 6px;
-    background-color: rgb(219, 45, 18);
+    background-color: rgb(230, 238, 241);
     height: 50px;
     width: 350px;
     margin-top: 2px;
-
+    font-size:xx-large;
+    text-align: center;
+    color: black;
+    text-decoration: none;
  }
+
+ 
 

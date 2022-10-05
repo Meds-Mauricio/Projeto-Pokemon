@@ -9,7 +9,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    text-shadow: 5px 6px 2px #ccc}
+    text-shadow: 5px 6px 2px #ccc
+}
 
 .pokeHeader {
     text-align: center;
@@ -49,9 +50,7 @@
     text-transform: capitalize;
 }
 
-.pokeHab
-
-.pokeInfo1 {
+.pokeHab .pokeInfo1 {
     display: flex;
     width: 50px;
 }
@@ -67,4 +66,69 @@
 .listPokemons img {
     margin: -18px 8px 11px -4px;
     width: 150px;
+}
+
+.pokeHome {
+    padding: 10px
+}
+
+.linkVoltar {
+    margin: 10px 10px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .pokelist {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 50%;
+        padding: 0 50% 0;
+    }
+
+    .listPokemons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 2%;
+    }
+
+
+
+    .pokelista {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .pokeHabilidades {
+        position: absolute;
+        display: flow-root;
+        margin-left: 77%;
+        margin-top: 115px;
+    }
+
+    .open {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width < 780px) {
+    .home    
+    {
+        height: 100%;
+        width: 100%;
+        padding: 433px 0px;
+        position: absolute;
+        display: flow-root;
+        margin-left: 77%;
+        margin-top: 115px;
+    }
 }

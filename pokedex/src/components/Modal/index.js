@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./Style.module.css"
 
- const Modal = (Props) => {(image, name, infos, status, onClick) 
+ const Modal = (Props) => {image, name, infos, status, onClick 
     name= string;
     infos= any;
     status= string;

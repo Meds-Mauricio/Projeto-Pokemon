@@ -1,29 +1,34 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     /* background-image: url(https://img.elo7.com.br/product/zoom/1C6BB91/painel-festa-1-50x1m-pokemon-lona.jpg); */
-    background-color:#FF4D49;
+    background-color: #FF4D49;
 }
 
 
 * {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-    display: flex;
-    align-items: center;
-    
-  }
+    box-sizing: border-box;
 }
 
 
+      /* @media screen and (max-width: 480px) {
+        .body {
+            width: auto;
+            color: white;
+            display: flex;
+            align-items: center;
+
+        }
+
+    } */
+
+    section  {
+        width: 100%;
+        padding: 37px;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+}
