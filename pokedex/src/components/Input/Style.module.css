@@ -5,6 +5,11 @@
     width: 350px;
 }
 
+.pokeLista{
+    padding: 10px;
+
+}
+
 .pokeSearch input {
     border-radius: 6px;
     width: 350px;
@@ -21,11 +26,13 @@
 }
 
 .pokeSearch {
-    width: 350px;
-    height: 100px;
+    width: 96%;
+    height: 100%;
     display: flex;
     flex-flow: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
  }
 
 .pokeSearch a{
@@ -39,6 +46,3 @@
     color: black;
     text-decoration: none;
  }
-
- 
-

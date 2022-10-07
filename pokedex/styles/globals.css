@@ -4,8 +4,8 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
         Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    /* background-image: url(https://img.elo7.com.br/product/zoom/1C6BB91/painel-festa-1-50x1m-pokemon-lona.jpg); */
-    background-color: #FF4D49;
+        background-image: url("https://cdnb.artstation.com/p/assets/images/images/048/231/137/large/rickard-widmark-pokeballs.jpg?1649523265");
+text-align: center;
 }
 
 
@@ -14,21 +14,19 @@ body {
 }
 
 
-      /* @media screen and (max-width: 480px) {
-        .body {
-            width: auto;
-            color: white;
-            display: flex;
-            align-items: center;
+.logo {
+    width: 100%;
+}
 
-        }
 
-    } */
 
-    section  {
-        width: 100%;
-        padding: 37px;
+@media screen and (max-width: 480px) {
+    .body {
+        width: auto;
+        color: white;
         display: flex;
-        height: 100%;
-        justify-content: center;
+        align-items: center;
+
+    }
+
 }

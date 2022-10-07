@@ -8,11 +8,11 @@ export default function pagePokemon() {
     const [detalhes, setDetalhes] = useState(false);
     const [valores, setValores] = useState();
 
-    const modal = (name) => {
+    const modal = (pokemons) => {
         setDetalhes(true);
         axios
             .get(
-                `https://pokeapi.co/api/v2/pokemon/${name}`,
+                `https://pokeapi.co/api/v2/pokemon/${pokemons}`,
             )
             .then((preview) => {
                 setValores(preview.data);
@@ -24,20 +24,22 @@ export default function pagePokemon() {
         axios
             .get(
                 'https://pokeapi.co/api/v2/pokemon?limit=151&offset=0',
-                {
-                    headers: {},
-                }
+                // {
+                //     headers: {},
+                // }
             )
             .then((preview) => {
                 setData(preview.data.results);
             });
     }, []);
 
+
+
     return (
-        <>
-            <div className={Style.voltarHome}>
+        <section>
+            <>
                 <a className={Style.linkVoltar} href="/">Voltar</a>
-            </div>
+            </>
             <section className={Style.pokeLista}>
                 {detalhes && valores && (
                     <div className={Style.pokeModal}>
@@ -83,7 +85,7 @@ export default function pagePokemon() {
                         </div>
                     </div>
                 )}
-                
+
 
                 <div className={Style.pokelist}>
                     {
@@ -104,7 +106,7 @@ export default function pagePokemon() {
 
             </section>
 
-        </>
+        </section>
     )
 
 }

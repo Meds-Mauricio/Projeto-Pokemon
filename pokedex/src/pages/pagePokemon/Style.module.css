@@ -1,3 +1,14 @@
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #FF4D49;
+
+}
+
 .pokeLista {
     display: flex;
     width: 100%;
@@ -5,11 +16,10 @@
 }
 
 .pokelist {
-    padding: 20px 157px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-shadow: 5px 6px 2px #ccc
+    justify-content: space-around;
+    text-shadow: 5px 6px 2px #ccc;
 }
 
 .pokeHeader {
@@ -20,8 +30,10 @@
 }
 
 .pokeModal {
+    position: absolute;
+    opacity: 0.9;
     width: 585px;
-    margin: 0 auto;
+    margin-left: 10px;
 }
 
 .pokeHabilidades {
@@ -30,7 +42,7 @@
     text-transform: capitalize;
     background-color: #f0f8ff;
     padding: 10px;
-    margin: 23px 9px;
+    margin: 23px 0px;
     font-weight: bolder;
     font-size: 25px;
     border-radius: 15px;
@@ -38,13 +50,13 @@
 }
 
 .listPokemons {
-    margin: 15px 31px 2px 0px;
-    font-weight: bolder;
+    margin: 20px 6px 6px 0;
+    /* font-weight: bolder; */
     font-size: 25px;
     width: 180px;
     height: 230px;
     text-align: center;
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     border: solid #000;
     border-radius: 15px;
     text-transform: capitalize;
@@ -68,14 +80,23 @@
     width: 150px;
 }
 
+.linkVoltar {
+    margin-left: 30px;
+    border: solid;
+    width: 58px;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    text-align: center;
+    
+    color: #000;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 3px;
+}
+
 .pokeHome {
     padding: 10px
 }
-
-.linkVoltar {
-    margin: 10px 10px;
-}
-
 
 
 @media screen and (max-width: 480px) {
@@ -85,8 +106,8 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
-        margin-left: 50%;
-        padding: 0 50% 0;
+        margin-left: 100%;
+        padding: 0 75% 0;
     }
 
     .listPokemons {
@@ -97,8 +118,6 @@
         align-items: center;
         margin-left: 2%;
     }
-
-
 
     .pokelista {
         width: 100%;
@@ -118,11 +137,21 @@
     .open {
         text-align: center;
     }
+
+    .pokeModal {
+        position: absolute;
+        opacity: 0.9;
+        margin-left: 20%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
-@media screen and (max-width < 780px) {
-    .home    
-    {
+@media screen and (max-width: 768px) {
+    .home {
         height: 100%;
         width: 100%;
         padding: 433px 0px;
@@ -130,5 +159,9 @@
         display: flow-root;
         margin-left: 77%;
         margin-top: 115px;
+    }
+
+    .pokeList{
+
     }
 }

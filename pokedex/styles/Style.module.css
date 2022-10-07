@@ -1,6 +1,8 @@
 .home {
     display: flex;
-    align-items: center
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .containerPages{
@@ -9,15 +11,5 @@
     height: 100%;
     justify-content: center;
     width: 100%;
-}
-
-.section .pokeHome {
-        width: 100%;
-        padding: 37px;
-        display: flex;
-        flex-direction: row;
-        margin-top: 330px;
-        height: 100%;
-        justify-content: center;
 }
 
