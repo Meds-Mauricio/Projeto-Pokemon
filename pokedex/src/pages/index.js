@@ -1,43 +1,29 @@
-// import Head from 'next/head'
-import Image from 'next/image'
-import React, { useState, useEffect } from 'react'
-import Input from '../components/Input'
+import React, { useState } from 'react'
 import axios from 'axios'
+import Style from '../pages/pagePokemon/Style.module.css'
 
 export default function Home() {
-    const [resposta, setResposta] = useState();
     const [valores, setValores] = useState();
     const [data, setData] = useState();
     const [detalhes, setDetalhes] = useState(false);
 
-  
+
     const pokeModal = (pokemons) => {
-        setDetalhes(true);
         axios
             .get(
                 `https://pokeapi.co/api/v2/pokemon/${pokemons}`,
             )
             .then((preview) => {
-                setValores(preview.data);
-                console.log(preview.data);
-            })}
-
-    useEffect(() => {
-        axios
-            .get(
-                'https://pokeapi.co/api/v2/pokemon?limit=151&offset=0',
-                {
-                    headers: {},
-                }
-            )
-            .then((preview) => {
-                setData(preview.data.results);
-            });
-    }, []);
+                setValores(preview?.data);
+                setDetalhes(true);
+            })
+    }
 
     return (
-        <section className='pokeHome'>
+        <div className={Style.home}>
+
             {detalhes && valores && (
+
                 <div className={Style.pokeModal}>
                     <div className={Style.pokeHabilidades}>
                         <div className={Style.fecharModal} onClick={() => {
@@ -48,7 +34,7 @@ export default function Home() {
                             <div className={Style.pokeInfo1}>
                                 <p className={Style.InfoId}>{valores.name} {valores.id}</p>
                             </div>
-                            {valores.stats.map((stats) => {
+                            {valores?.stats && valores.stats.map((stats) => {
                                 return (
                                     <div className={Style.pokeInfo}>
                                         <p className={Style.pokeHp}>{stats.stat.name}=
@@ -58,7 +44,7 @@ export default function Home() {
 
                             }
                             )}
-                            {valores.abilities.map((abilities) => {
+                            {valores?.abilities && valores.abilities.map((abilities) => {
                                 return (
                                     <div className={Style.pokeInfo2}>
                                         <p>{abilities.ability.name}</p>
@@ -66,7 +52,7 @@ export default function Home() {
                                 );
                             }
                             )}
-                            {valores.types.map((types) => {
+                            {valores?.types && valores.types.map((types) => {
                                 return (
                                     <div className={Style.pokeTipo}>
                                         <p>Type= {types.type.name}</p>
@@ -80,15 +66,25 @@ export default function Home() {
                     </div>
                 </div>
             )}
-            <div className='logo'>
-                <div className='pokeHome1'>
-                    <Input />
+            <section className={Style.pokeHome}>
+                <div className={Style.buttons}>
+                    <input
+                        onChange={(e) => setData(e.target.value)}
+                        placeholder="digite seu Pokemon"
+                    />
+                    <button className={Style.button1}
+                        text={"Search"}
+                        onClick={() => pokeModal(data)}>Search
+                    </button>
+                </div>
+                <div>
+                    <button className={Style.button2}
+                        onClick={() => window.location.href = "/pagePokemon"}>
+                        Open
+                    </button>
                 </div>
 
-            </div>
-
-        </section>
-
+            </section>
+        </div>
     )
-
 }

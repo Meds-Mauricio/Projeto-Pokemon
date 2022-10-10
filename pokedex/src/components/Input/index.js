@@ -12,34 +12,22 @@ export default function Input() {
         setValores(true);
     }
     return (
-        <section>
-            <div className="Botões">
-                <form>
-                    <div>
-                        <input
-                            onChange={(e) => setDetalhes(e.target.value)} placeholder="digite seu Pokemon"
-                        />
-                        <button
-                            text={"Search"} name={() => pokeModal(valores)}
-                            onClik={() => {
-                                
-                                setValores(valores);
-                            }}
-                        >
-                            Search
-                        </button>
-                    </div>
-                </form>
-                <div>
-                    <button div className="Open"
-                        onClick={click}>
-                        Open
-                    </button>
-                </div>
+        <div className={Style.pokeSearchs}>
+            <div className={Style.pokebutton}>
+                <input
+                    onChange={(e) => setData(e.target.value)} placeholder="digite seu Pokemon"
+                />
+                <button className={Style.search}
+                    text={"Search"}
+                    onClick={() => pokeModal(data)}>
+                    Search
+                </button>
             </div>
-        </section>
-
-
+            <button div className={Style.open}
+                onClick={click}>
+                Open
+            </button>
+        </div>
     );
 }
 
