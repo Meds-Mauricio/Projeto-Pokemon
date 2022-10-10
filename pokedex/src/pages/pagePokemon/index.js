@@ -40,6 +40,8 @@ export default function pagePokemon() {
             <>
                 <a className={Style.linkVoltar} href="/">Voltar</a>
             </>
+
+            
             <section className={Style.pokeLista}>
                 {detalhes && valores && (
                     <div className={Style.pokeModal}>

@@ -22,6 +22,11 @@ export default function Home() {
     return (
         <div className={Style.home}>
 
+            <div>
+                <img className={Style.imgHome} src="https://tse2.mm.bing.net/th?id=OIP.tA0mG3E7flbJAWMfp9XR1QHaFj&pid=Api&P=0" />
+
+            </div>
+
             {detalhes && valores && (
 
                 <div className={Style.pokeModal}>

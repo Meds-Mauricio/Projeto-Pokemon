@@ -9,6 +9,10 @@
 
 }
 
+.home {
+    display: flex;
+}
+
 .pokeLista {
     display: flex;
     width: 100%;
@@ -150,6 +154,11 @@
         flex-wrap: wrap;
         flex-direction: column;
     }
+
+    .fecharModal{
+        cursor: pointer;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
