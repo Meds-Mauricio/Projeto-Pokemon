@@ -36,12 +36,10 @@ export default function pagePokemon() {
 
 
     return (
-        <section >
+        <section className={Style.container}>
             <>
                 <a className={Style.linkVoltar} href="/">Voltar</a>
             </>
-
-            
             <section className={Style.pokeLista}>
                 {detalhes && valores && (
                     <div className={Style.pokeModal}>
@@ -103,11 +101,7 @@ export default function pagePokemon() {
                         })
                     }
                 </div>
-
-
             </section>
-
         </section>
     )
-
 }
